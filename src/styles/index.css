@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.hero{
+  background-color: #242424;
+  background-image: image();
+  height: 100vh;
+}
+.hero .contanier{
+  width: 80%;
+  margin: auto;
+}
+.hero nav{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+}
+.hero nav .logo span{
+  color: #4bffa5;
+}
+.hero nav .nav-links{
+  color: #fff;
+  font-size: 18px;
+  margin-left: 35px;
+  text-transform: capitalize;
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+  list-style: none;
+}
+.hero nav .nav-links a:hover,
+.hero nav .nav-links a.active{
+  color: #4bffa5;
+}
+
+
+
+.hero .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5%;
+}
+.hero .content .div-text h4{
+  color: #fff;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+.hero .content .div-text h1{
+  color: #fff;
+  font-size: 60px;
+  margin: 25px 0 10px;
+}
+.hero .content .div-text span{
+  color: #4bffa5;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1.5;
+}
+.hero .content .div-text .social-link{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hero .content .div-text .social-link a i{
+  width: 45px;
+  height: 45px;
+  background-color: #242424;
+  border: 2px solid #4bffa5;
+  color: #4bffa5;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.hero .content .div-text .social-link a i:hover{
+  color: #242424;
+  background-color: #4bffa5;
+  box-shadow: 0 0 10px #4bffa5;
+}
+.hero .content .div-text .btn{
+  padding: 10px 20px;
+  background-color: #4bffa5;
+  border: 1px solid #4bffa5;
+  color: #242424;
+  font-size: 18px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #4bffa5;
+}
+.hero .content .div-text .btn:hover{
+  background-color: #242424;
+  color: #4bffa5;
+  box-shadow: 0 0 0;
+}
+
+
+.a{
+  padding: 10em;
+}
+
+
+.hero .content .div-img{
+  width: 50%;
+}
+.hero .content .div-img img{
+  width: 100%;
+  position: relative;
+  animation: img-portfile 8s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+@keyframes img-portfile{
+  0%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
